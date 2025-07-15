@@ -1,0 +1,95 @@
+/* Базовые стили */
+:root {
+    --primary-color: #4CAF50; /* Зелёный - цвет фермы */
+    --secondary-color: #FFC107; /* Жёлтый акцент */
+    --dark-color: #333;
+    --light-color: #f9f9f9;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-color);
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Навигация */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.round-img {
+    border-radius: 50%;  /* Делает изображение круглым */
+    width: 150px;        /* Размеры можно менять */
+    height: 150px;       /* Желательно одинаковые width и height */
+    object-fit: cover;   /* Обрезает изображение, сохраняя пропорции */
+}
+
+.fermerall{
+    display: flex;
+    gap: 30px;
+} 
+
+.fermer {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+/* Секции */
+section {
+    padding: 100px 0;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/cow2.JPG');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+    margin-top: 60px; /* Учитываем фиксированное меню */
+}
+.logotip {
+    width: 80px; /* или любой другой размер по вашему вкусу */
+    height: auto; /* сохраняет пропорции изображения */
+    position: absolute; /* абсолютное позиционирование */
+    top: 10px; /* отступ сверху */
+    left: 10px; /* отступ слева */
+    border-radius: 8px; /* Закругленные углы */
+   
+    z-index: 100; /* чтобы логотип был поверх других элементов */
+}
+.product{
+    text-align: center;
+    padding: 10px;  
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Мобильное меню - можно добавить бургер */
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+}
