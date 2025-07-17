@@ -6,6 +6,35 @@
     --light-color: #f9f9f9;
 }
 
+/* Стили для контактной информации в шапке */
+.header-contacts {
+     position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 7px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.contact-item {
+       display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.contact-item i {
+     color: #4CAF50;
+    min-width: 16px;
+    text-align: center;
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -111,6 +140,25 @@ body {
 .hrefa .btn:hover {
     background-color: white;
     color: #4CAF50;
+}
+
+.containerabout{
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.aboutus{
+
+  padding: 30px;
+  margin: 20px;
+
+  border: 1px solid #fff;
+}
+
+.usferma{
+    text-align: center;
 }
 
 .round-img {
