@@ -161,28 +161,83 @@ body {
     text-align: center;
 }
 
-.round-img {
-    border-radius: 50%;  /* Делает изображение круглым */
-    width: 150px;        /* Размеры можно менять */
-    height: 150px;       /* Желательно одинаковые width и height */
-    object-fit: cover;   /* Обрезает изображение, сохраняя пропорции */
-}
-
-.fermerall{
-    display: flex;
-    gap: 30px;
-} 
-
-.fermer {
-    text-align: center;
-    padding: 10px;
-}
-
-
-/* Секции */
-section {
+#cowhappy{
+    
+}.products {
     padding: 100px 0;
+    text-align: center;
 }
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #666;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image-container {
+    padding: 10px;
+    border: 2px dashed #4CAF50;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.round-img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-title {
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+.view-all-container {
+    margin-top: 40px;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #4CAF50;
+}
+
+.view-all-btn:hover {
+    background-color: transparent;
+    color: #4CAF50;
+}
+
 
 
 .product{
