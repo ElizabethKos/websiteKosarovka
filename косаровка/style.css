@@ -141,33 +141,116 @@ body {
     background-color: white;
     color: #4CAF50;
 }
-
-.containerabout{
+.containerabout {
     margin: 0 auto;
     padding: 20px 0;
     display: flex;
     flex-direction: row-reverse;
 }
 
-.aboutus{
-
-  padding: 30px;
-  margin: 20px;
-
-  border: 1px solid #fff;
+.aboutus {
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid #fff;
 }
 
-.usferma{
-    text-align: center;
+.usferma {
+    text-align: center; /* Центрируем заголовок */
+    margin-bottom: 20px; /* Отступ после заголовка */
 }
 
+.about-text {
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+.about-text p {
+    text-indent: 30px; /* Красная строка */
+    margin-bottom: 15px; /* Отступ между абзацами */
+    line-height: 1.6; /* Межстрочный интервал */
+}
+
+.about-text p:first-child {
+    margin-top: 0; /* Убираем отступ у первого абзаца */
+}
+
+.about-text p:last-child {
+    margin-bottom: 0; /* Убираем отступ у последнего абзаца */
+}
 #cowhappy{
     
 }.products {
     padding: 100px 0;
     text-align: center;
 }
+/* Стили для слайдера */
+.farm-slider {
+    position: relative;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
+.slider-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.5);
+    color: #4CAF50;
+    border: none;
+    font-size: 24px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.slider-arrow:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.prev-arrow {
+    left: 20px;
+}
+
+.next-arrow {
+    right: 20px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .farm-slider {
+        height: 300px;
+    }
+    
+    .slider-arrow {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
 .section-title {
     margin-bottom: 20px;
     font-size: 2rem;
