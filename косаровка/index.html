@@ -52,7 +52,7 @@
    <section id="about" class="about">
     <div class="containerabout">
         <div class="aboutus">
-            <h2 class="usferma">О нашей ферме</h2>
+            <h2 class="usferma">О ферме</h2>
             <div class="about-text">
                 <p>Еще с раннего детства, живя в деревне, мы привыкли к домашнему молоку. Повзрослев и уехав в другое место жить, мы поняли, что без домашнего хозяйства просто на просто некомфортно. Поэтому в 2005 году, мы купили корову Кнопку. Это стало первым шагом на пути к чему-то большему, хоть и совсем не планировалось изначально.</p>
                 
@@ -78,7 +78,7 @@
 
    <section id="products" class="products">
     <div class="container">
-        <h2 class="section-title">Наши продукты</h2>
+        <h2 class="section-title">Продукты</h2>
         <p class="section-description">Мы предлагаем высококачественные фермерские продукты, выращенные с заботой о природе и здоровье наших покупателей.</p>
            
         <div class="products-grid">
@@ -123,7 +123,7 @@
     <section id="servis" class="servis"> 
         <div class="container">
         <div>
-            <h1> Наши фермеры: </h1>
+            <h1 class="zagolovok"> Фермеры: </h1>
         </div>
         <div class="fermerall">
             <div class="fermer">
@@ -140,57 +140,89 @@
             </div>
         </div>
         <div class="secondfermer">
-            <h2>Помощники по хозяйству</h2>
+            <h1 class="zagolovok">Помощники по хозяйству:</h1>
         </div>
         <div class="fermerall">
         <div class="fermer">
-             <img src="images/cow1.JPG" alt="Наша ферма" class="round-img">
+             <img src="images/valyanew.PNG" alt="Наша ферма" class="round-img">
              <p>
                 Валентина
              </p>
+             <p>Главный по контролю</p>
             </div>
             <div class="fermer">
-              <img src="images/cow2.JPG" alt="Наша ферма"  class="round-img">
+              <img src="images/vanya.PNG" alt="Наша ферма"  class="round-img">
              <p>
                 Иван
              </p>
+             <p>Поддержка физической работы 1</p>
             </div>
             <div class="fermer">
              <img src="images/petr.JPG" alt="Наша ферма" class="round-img">
              <p>
                 Петр
              </p>
+             <p>Поддержка физической работы 2</p>
             </div>
             <div class="fermer">
-              <img src="images/cow3.JPG" alt="Наша ферма"  class="round-img">
+              <img src="images/dasha.jpg" alt="Наша ферма"  class="round-img">
              <p>
                 Дарья
              </p>
+             <p>Моральная и эстетическая поддержка</p>
             </div>
               <div class="fermer">
               <img src="images/liza.JPG" alt="Наша ферма"  class="round-img">
              <p>
                 Елизавета
              </p>
+             <p>Автор сайта и моральная поддержка</p>
             </div>
         </div>
         </div>
     </section>
 
-    <section id="contacts" class="contacts">
-        <div class="container">
-            <h2>Контакты</h2>
-            <p>Адрес:Витебская область, д. Куницкие, ул. Зеленая, 3</p>
-            <p>Телефон: +375(33) 675-26-25</p>
-             <p>Телефон: +375(33) 599-93-94</p>
+<footer class="site-footer">
+    <!-- Неровный край с плавными изгибами -->
+    <div class="irregular-edge"></div>
+    
+    <div class="footer-content container">
+        <!-- Колонка 1: Контакты -->
+        <div class="footer-column">
+            <h3>Контакты</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Витебская область, д. Куницкие, ул. Зеленая, 3</p>
+            <p><i class="fas fa-phone"></i> +375(33) 675-26-25</p>
+            <p><i class="fas fa-phone"></i> +375(33) 599-93-94</p>
+            <p><i class="fas fa-envelope"></i> info@kosarovka.by</p>
         </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 Ферма "Косаровка"</p>
+        <!-- Колонка 2: Меню -->
+        <div class="footer-column">
+            <h3>Меню</h3>
+            <div class="footer-menu">
+                <a href="#hero">Домашняя страница</a>
+                <a href="#about">О нас</a>
+                <a href="#products">Продукты</a>
+                <a href="#servis">Сервис</a>
+                <a href="#contacts">Контакты</a>
+            </div>
         </div>
-    </footer>
+
+        <!-- Колонка 3: Форма отзыва -->
+        <div class="footer-column">
+            <h3>Оставить отзыв</h3>
+            <form class="feedback-form" action="https://formspree.io/f/ваша_почта@gmail.com" method="POST">
+                <textarea name="message" placeholder="Ваш отзыв..." required></textarea>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2025 Ферма "Косаровка" - Все права защищены</p>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 </body>
