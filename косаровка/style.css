@@ -74,6 +74,7 @@ body {
      padding: 180px 0 100px; /* Увеличили верхний отступ для навигации */
 }
 
+
 /* Навигация */
 .navbar {
     position: absolute;
@@ -178,10 +179,101 @@ body {
 }
 
 
+
+.carousel {
+  position: relative;
+  max-width: 90%; /* Ограничиваем ширину карусели */
+  margin: 0 auto;
+  overflow: hidden; /* Скрываем всё, что выходит за границы */
+}
+.carousel-container{
+    display: flex;
+    transition: transform 0.5s ease;
+     width: 100%;
+}
+
+.slide{
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-around;
+    gap: 30px; /* Расстояние между продуктами */
+  padding: 10px;
+  box-sizing: border-box;
+   min-width: 0;
+}
+
+/* Контейнер для кнопок (новый блок) */
+.carousel-controls {
+  display: flex;
+  justify-content: center; /* или flex-end, чтобы прижать вправо */
+  gap: 20px; /* расстояние между кнопками */
+  margin-top: 10px;
+   align-items: center; /* Это выравнивает все элементы по центру вертикально */
+}
+
+/* Убираем абсолютное позиционирование */
+.carousel-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #696969;
+  background-color: transparent;
+  color: #656464;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carousel-button:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  background-color: #6a6969;
+}
+
+.product {
+    flex: 0 0 auto;
+    min-width: 150px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image-container {
+    padding: 10px;
+    border: 2px dashed #73af75;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.round-img {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-title {
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+
 .products {
     padding: 100px 0;
     text-align: center;
 }
+
 /* Стили для слайдера */
 .farm-slider {
     position: relative;
@@ -229,7 +321,7 @@ body {
 }
 
 .slider-arrow:hover {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(159, 156, 156, 0.8);
 }
 
 .prev-arrow {
@@ -270,56 +362,8 @@ body {
     margin-bottom: 50px;
 }
 
-.product {
-    flex: 1;
-    min-width: 150px;
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.product-image-container {
-    padding: 10px;
-    border: 2px dashed #4CAF50;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
 
-.round-img {
-    border-radius: 50%;
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    display: block;
-}
-
-.product-title {
-    font-weight: 600;
-    color: #333;
-    margin-top: 10px;
-}
-
-.view-all-container {
-    margin-top: 40px;
-}
-
-.view-all-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid #4CAF50;
-}
-
-.view-all-btn:hover {
-    background-color: transparent;
-    color: #4CAF50;
-}
 
 
 
