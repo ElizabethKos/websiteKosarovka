@@ -21,6 +21,15 @@
     z-index: 100;
 }
 
+.about{
+    background-color: rgba(80, 117, 90, 0.2);
+}
+.products{
+    background-color: rgba(168, 168, 168, 0.2);
+}
+.aboutus{
+     background-color: rgba(122, 229, 151, 0.2);
+}
 .contact-item {
        display: flex;
     align-items: center;
@@ -64,7 +73,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/cow2.JPG');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.25)), url('images/cow2.JPG');
     background-size: cover;
     color: white;
     text-align: center;
@@ -178,7 +187,14 @@ body {
     margin-bottom: 0; /* Убираем отступ у последнего абзаца */
 }
 
-
+.coast{
+    padding: 10px;
+    background-color: rgba(255, 215, 156, 0.2);
+}
+.coast p{
+    line-height: 1;  /* стандартно 1.5, можно сделать меньше */
+  margin-bottom: 0.5em; /* уменьшенный отступ */
+}
 
 .carousel {
   position: relative;
@@ -306,32 +322,37 @@ body {
 }
 
 .slider-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255,255,255,0.5);
-    color: #4CAF50;
-    border: none;
-    font-size: 24px;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-    transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fdf9f9;
+  background-color: transparent;
+  color: #fbf8f8;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  position: absolute; /* Чтобы кнопки не сдвигали слайдер */
+  top: 50%; /* Выравнивание по вертикали */
+  transform: translateY(-50%); /* Точное центрирование */
+  z-index: 10; /* Чтобы кнопки были поверх изображений */
 }
 
 .slider-arrow:hover {
-    background-color: rgba(159, 156, 156, 0.8);
+  background: rgba(0, 0, 0, 0.3); /* Легкий серый фон при наведении */
+  color: #333; /* Чуть темнее цвет стрелки */
 }
 
 .prev-arrow {
-    left: 20px;
+  left: 15px; /* Расположение кнопки "назад" слева */
 }
 
 .next-arrow {
-    right: 20px;
+  right: 15px; /* Расположение кнопки "вперед" справа */
 }
-
 /* Адаптация для мобильных */
 @media (max-width: 768px) {
     .farm-slider {
