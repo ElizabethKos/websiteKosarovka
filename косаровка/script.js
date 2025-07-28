@@ -67,3 +67,6 @@ prevBtn.addEventListener('click', function() {
 nextBtn.addEventListener('click', function() {
   goToSlide(currentSlide + 1); // Переход к следующему слайду
 });
+
+
+
